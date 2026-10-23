@@ -64,8 +64,7 @@ globalThis.EL26 = (() => {
   const b64 = u8 => btoa(Array.from(u8, c => String.fromCharCode(c)).join(""));
   const unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
   return { chave, cifrar, decifrar, b64, unb64, texto: u8 => td.decode(u8), bytes: s => te.encode(s), SALT, ITERACOES };
-})();
-</script>
+})();</script>
 <script>
 (function () {
   const $ = id => document.getElementById(id);
